@@ -25,10 +25,11 @@ const scrollToElement = (id, duration) => {
 							Day:
 						</p>
 						<p class="title is-1 has-text-weight-bold has-text-white">
-							<span class="px-3 has-text-primary has-background-white"
-								style="border-radius: 5px; padding-top: ;">Intelligent World</span> 2030
+							<span class="px-3 pb-2 has-text-primary has-background-white" style="border-radius: 5px;">Intelligent</span>
+							World 2030
 						</p>
-						<p class="title has-text-weight-bold has-text-white">9th May 2023, 9 am to 5 pm, Auditorium Library & Pusat
+						<p class="title is-5 has-text-weight-bold has-text-white">9th May 2023, 9 am to 5 pm, Auditorium Library &
+							Pusat
 							Akademik Pelajar,
 							UMP
 							Pekan</p>
