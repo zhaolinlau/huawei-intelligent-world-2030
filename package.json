@@ -20,6 +20,7 @@
 		"@mdi/font": "^7.2.96",
 		"@oruga-ui/oruga-next": "^0.6.0",
 		"@oruga-ui/theme-bulma": "^0.2.10",
+		"bulma-list": "^1.2.0",
 		"vue-scrollto": "^2.20.0"
 	}
 }
