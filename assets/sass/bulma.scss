@@ -5,11 +5,6 @@ $primary-light: findLightColor($primary);
 $primary-dark: findDarkColor($primary);
 $primary-invert: findColorInvert($primary);
 
-$secondary: #f18063;
-$secondary-light: findLightColor($secondary);
-$secondary-dark: findDarkColor($secondary);
-$secondary-invert: findColorInvert($secondary);
-
 $custom-colors: null !default;
 $custom-shades: null !default;
 
@@ -29,11 +24,6 @@ $colors: mergeColorMaps(("white": ($white,
 				$primary-invert,
 				$primary-light,
 				$primary-dark,
-			),
-			"secondary": ($secondary,
-				$secondary-invert,
-				$secondary-light,
-				$secondary-dark,
 			),
 			"link": ($link,
 				$link-invert,
