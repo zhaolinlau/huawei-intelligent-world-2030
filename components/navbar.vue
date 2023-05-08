@@ -4,7 +4,7 @@ import VueScrollTo from 'vue-scrollto';
 
 const showNav = ref(false);
 
-const scrollToElement = (id, duration) => {
+const scrollToElement = (id) => {
 	VueScrollTo.scrollTo(id, {
 		duration: 500,
 	});

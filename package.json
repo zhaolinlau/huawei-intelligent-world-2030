@@ -15,7 +15,7 @@
 		"@mdi/font": "^7.2.96",
 		"@oruga-ui/oruga-next": "^0.6.0",
 		"@oruga-ui/theme-bulma": "^0.2.10",
-		"@types/node": "^18.16.5",
+		"@types/node": "^18.16.6",
 		"bulma-list": "^1.2.0",
 		"node-sass": "^8.0.0",
 		"nuxt": "^3.4.3",
