@@ -12,7 +12,7 @@ const scrollToElement = (id, duration) => {
 </script>
 
 <template>
-	<nav class="navbar is-dark is-tab is-transparent is-spaced" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-dark is-tab is-transparent" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand ">
 			<a class="navbar-item" href="/">
 				<p class="title has-text-primary has-text-weight-bold">Huawei <span class="has-text-white">Open Day</span></p>
@@ -47,16 +47,19 @@ const scrollToElement = (id, duration) => {
 					Booth
 				</a>
 				<a class="navbar-item is-tab" @click="scrollToElement('#supporters', 500)">
-					Partners
+					Supporters
+				</a>
+				<a class="navbar-item is-tab" @click="scrollToElement('#organizers', 500)">
+					Organizers
 				</a>
 				<a class="navbar-item is-tab" @click="scrollToElement('#contact', 500)">
 					Contact
 				</a>
 				<div class="navbar-item">
 					<a class="button is-primary is-rounded"
-						href="https://docs.google.com/forms/d/e/1FAIpQLSfjhr9bv0SeIVUE2k9uNqkrbcj3UZ2W2SCC-_APKPmoerL8MQ/viewform?usp=sf_link"
+						href="https://docs.google.com/forms/d/e/1FAIpQLSfjhr9bv0SeIVUE2k9uNqkrbcj3UZ2W2SCC-_APKPmoerL8MQ/viewform"
 						target="_blank">
-						<strong>Join Now</strong>
+						<strong>Drop Resume</strong>
 					</a>
 				</div>
 			</div>

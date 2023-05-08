@@ -35,64 +35,68 @@ const speakers = [
 ]
 
 const supporters = [
-	{
-		image: "https://i.postimg.cc/TpmmM6Q3/UMP-Group.png",
-		image: "https://i.postimg.cc/xCQGQcwD/UMPA.png",
-		image: "https://i.postimg.cc/xqNNM2w3/UMPH.jpg",
-		image: "https://i.postimg.cc/TKc6ptTX/CHEST-LOGO-12-NO-BACKGROUND.png",
-		image: "https://i.postimg.cc/vBdTTKLC/EEES.jpg",
-		image: "https://i.postimg.cc/p92PZgsT/Faculty-of-Computing.png",
-		image: "https://i.postimg.cc/p9Xt8Kd5/IEM-PAHANG.png",
-		image: "https://i.postimg.cc/BP13bsnh/impress.jpg",
-		image: "https://i.postimg.cc/3WP76ytz/logo-fk.png",
-		image: "https://i.postimg.cc/qNwPkgGJ/mathelites.png",
-		image: "https://i.postimg.cc/34vfDw2D/MECHAPRO.png",
-		image: "https://i.postimg.cc/N5qqD3Mc/pemaju.png",
-		image: "https://i.postimg.cc/N57V4LS6/PETAKOM.png",
-		image: "https://i.postimg.cc/JH4sysk1/scets.png",
-		image: "https://i.postimg.cc/0MT3tS9f/scitexs.png",
-		image: "https://i.postimg.cc/3JyhMB2G/smach.png",
-		image: "https://i.postimg.cc/q62FW7Rd/UHCC.png",
-		image: "https://i.postimg.cc/14Fb8vKY/UMPBOT.png",
-	}
+	{ image: "https://i.postimg.cc/PrFZZ4BM/224839649-4571043749596940-3508388015328649113-n.jpg" },
+	{ image: "https://i.postimg.cc/KYMF8G22/290915818-459587816173021-8791722411229248030-n.png" },
+	{ image: "https://i.postimg.cc/vBdTTKLC/EEES.jpg" },
+	{ image: "https://i.postimg.cc/sfP8mBc8/301788814-536838291574946-1680698317962699745-n.png" },
+	{ image: "https://i.postimg.cc/PJS565sk/impress.jpg" },
+	{ image: "https://i.postimg.cc/FRW12BPY/240666240-101090099035044-6958351829623848979-n.jpg" },
+	{ image: "https://i.postimg.cc/mDdvJzDV/MECHAPRO.png" },
+	{ image: "https://i.postimg.cc/ZRKCsSLk/302707486-447192010795590-2907579453933473140-n.png" },
+	{ image: "https://i.postimg.cc/t4Q7QPzN/241042263-3114397288782316-3738434718613349861-n.png" },
+	{ image: "https://i.postimg.cc/YS74ggGC/270247051-102871622274596-9039080927905901191-n.jpg" },
+	{ image: "https://i.postimg.cc/q7GNGRyX/319928380-1289578088492140-4805146637763397241-n.jpg" },
+	{ image: "https://i.postimg.cc/3JyhMB2G/smach.png" },
+	{ image: "https://i.postimg.cc/QMZ7bwPs/132662373-602151230576848-9111131740841833489-n.jpg" },
+	{ image: "https://i.postimg.cc/4xV7mw30/302804716-595231032306052-1473994289169221361-n.png" }
 ]
 
+const organizers = [
+	{ image: "https://i.postimg.cc/3wCJYrhc/244139631-4492807177446443-647111529422559624-n.png" },
+	{ image: "https://i.postimg.cc/DfDWCZwr/305809210-538640921397860-8876311118138085153-n.jpg" },
+	{ image: "https://i.postimg.cc/vZC9TwTs/340401796-760010555619055-2976762322369776021-n.jpg" },
+	{ image: "https://i.postimg.cc/hv1dvXwz/335218020-589255826576673-3831463242205828873-n.jpg" }
+]
 const d1lists = [
 	{
 		title: "9.00 am – 9.30 am",
 		desc: "Arrival of students & guests"
 	},
 	{
-		title: "9.30 am – 9.45 am",
+		title: "9.30 am – 9.50 am",
 		desc: "Arrival of Vice Chancellor Assistant, Huawei VIPs, Honourable guests"
 	},
 	{
-		title: "9.45 am – 10.05 am",
-		desc: 'Welcoming Speech by Event Emcees, National Anthem "Negaraku", UMP Anthem "UMP Maju Gemilang", Doa Recitation'
+		title: "9.50 am – 10.00 am",
+		desc: "Opening Ceremony of 1st Huawei Open Day: Intelligent World 2030, Welcoming Speech of Professor Madya IR. Dr Nurul Hazlina Binti Noordin Universiti Malaysia Pahang"
 	},
 	{
-		title: "10.05 am – 10.30 am",
-		desc: "Opening Ceremony of 1st Huawei Open Day: Intelligent World 2030, Welcoming Address by Professor Madya IR. Dr Nurul Hazlina Binti Noordin Universiti Malaysia Pahang, Welcoming Address by Huawei VIP, Opening Montage"
+		title: "10.00 am – 10.05 am",
+		desc: "Speech by Jehovah Yii Zui Hon, Opening Montage"
 	},
 	{
-		title: "11.30 am – 12.30 pm",
-		desc: "Elevate Your Potential with Huawei + Q&A"
+		title: "10.05 am – 10.20 am",
+		desc: "Introduction of Huawei Malaysia by Ms. Sharifah Diana Shima Binti Syed Badrol + Q&A"
 	},
 	{
-		title: "12.30 pm - 12.40 PM",
-		desc: "Souvenir Presentation + Photo Session"
+		title: "10.20 am – 10.50 pm",
+		desc: "Intelligent World 2030 (Insight into ICT trends and their application) by Ms. Carolyn Wai Kar Yin + Q&A"
 	},
 	{
-		title: "12.40 Pm – 1.30 pm",
-		desc: "Lunch Break"
+		title: "10.50 pm - 11.20 PM",
+		desc: "Energy Digitalization: Green ICT Power by Mr. Lai Teik Nan + Q&A"
+	},
+	{
+		title: "10.50 pm - 11.20 PM",
+		desc: "Elevate your Potential with Huawei by Ms. Yong Sze Miin + Q&A"
+	},
+	{
+		title: "11.20 Pm – 12.20 pm",
+		desc: "Souvenir Presentation + Photo Session + Closing"
 	},
 	{
 		title: "1.30 Pm – 5.00 pm",
 		desc: "Career Booth: Career Consultation, Resume Review & Interview"
-	},
-	{
-		title: "5.00 pm ",
-		desc: "The End"
 	},
 ]
 
@@ -102,6 +106,46 @@ const d2lists = [
 		desc: "Career Booth: Career Consultation, Resume Review & Interview"
 	},
 ]
+
+const data = ref([
+	{
+		no: "001",
+		booth: "Huawei Consultation Booth"
+	},
+	{
+		no: "002",
+		booth: "Huawei Consultation Booth"
+	},
+	{
+		no: "003",
+		booth: "Huawei Consultation Booth"
+	},
+	{
+		no: "004",
+		booth: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
+	},
+	{
+		no: "005",
+		booth: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
+	},
+	{
+		no: "006",
+		booth: "IEM Pahang"
+	},
+])
+
+const columns = ref([
+	{
+		field: "no",
+		label: "No",
+		position: "centered"
+	},
+	{
+		field: "booth",
+		label: "Booth",
+		position: "centered"
+	}
+])
 </script>
 
 <template>
@@ -278,111 +322,17 @@ const d2lists = [
 			<div class="container">
 				<div class="columns is-multiline">
 					<div class="column is-12 has-text-centered">
-						<p class="title">CAREER BOOTH</p>
+						<p class="title">Career Booth</p>
 					</div>
 					<div class="column is-12">
-						<div class="tile is-ancestor">
-							<div class="tile is-parent">
-								<article class="tile is-child box">
-									<p class="title">Lorem, ipsum.</p>
-									<p class="subtitle">Lorem, ipsum dolor.</p>
-								</article>
-							</div>
-							<div class="tile is-parent">
-								<article class="tile is-child box">
-									<p class="title">Lorem.</p>
-									<p class="subtitle">Lorem.</p>
-								</article>
-							</div>
-							<div class="tile is-parent">
-								<article class="tile is-child box">
-									<p class="title">Lorem, ipsum.</p>
-									<p class="subtitle">Lorem, ipsum dolor.</p>
-									<div class="content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-											tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-									</div>
-								</article>
-							</div>
-						</div>
-
-						<div class="tile is-ancestor">
-							<div class="tile is-vertical is-8">
-								<div class="tile">
-									<div class="tile is-parent is-vertical">
-										<article class="tile is-child box">
-											<p class="title">Lorem, ipsum.</p>
-											<p class="subtitle">Lorem, ipsum.</p>
-										</article>
-										<article class="tile is-child box">
-											<p class="title">Lorem, ipsum.</p>
-											<p class="subtitle">Lorem, ipsum.</p>
-										</article>
-									</div>
-									<div class="tile is-parent">
-										<article class="tile is-child box">
-											<p class="title">Lorem, ipsum.</p>
-											<p class="subtitle">Lorem, ipsum dolor.</p>
-										</article>
-									</div>
-								</div>
-								<div class="tile is-parent">
-									<article class="tile is-child box">
-										<p class="title">Lorem, ipsum.</p>
-										<p class="subtitle">Lorem ipsum dolor sit amet.</p>
-										<div class="content">
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nulla voluptatum fugiat
-												voluptatibus temporibus aut enim quaerat quisquam culpa, laboriosam libero modi magni tenetur,
-												voluptate tempore ratione repudiandae voluptates esse.</p>
-										</div>
-									</article>
-								</div>
-							</div>
-							<div class="tile is-parent">
-								<article class="tile is-child box">
-									<div class="content">
-										<p class="title">Lorem, ipsum.</p>
-										<p class="subtitle">Lorem ipsum dolor sit.</p>
-										<div class="content">
-											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quod provident optio, dicta
-												dignissimos neque ratione repellendus nihil minima ea inventore ipsum ut velit dolore facilis
-												distinctio eveniet et voluptas?</p>
-											<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias recusandae harum ipsum quaerat
-												laudantium ea. Neque quia sapiente libero cum magnam aut a eaque porro. Quis, suscipit! Itaque,
-												magnam sapiente?</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus asperiores illo nisi
-												maxime autem blanditiis dolore nihil repudiandae nesciunt dolores sed expedita, odit qui,
-												perferendis libero fugit deleniti aliquid ipsa?</p>
-										</div>
-									</div>
-								</article>
-							</div>
-						</div>
-
-						<div class="tile is-ancestor">
-							<div class="tile is-parent">
-								<article class="tile is-child box">
-									<p class="title">Lorem, ipsum.</p>
-									<p class="subtitle">Lorem, ipsum.</p>
-									<div class="content">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, assumenda obcaecati corrupti
-											harum possimus consectetur fuga laboriosam, ex, sit reprehenderit quo rem dignissimos iure repellat
-											autem! Repudiandae enim impedit magnam?</p>
-									</div>
-								</article>
-							</div>
-							<div class="tile is-parent is-8">
-								<article class="tile is-child box">
-									<p class="title">Lorem, ipsum.</p>
-									<p class="subtitle">Lorem, ipsum dolor.</p>
-									<div class="content">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, neque quam facere consequuntur
-											nisi vero quaerat placeat quos. Vero illo quam quod dignissimos delectus amet id voluptatem
-											molestiae, nihil ab.</p>
-									</div>
-								</article>
-							</div>
-						</div>
+						<figure class="image">
+							<img src="https://i.postimg.cc/4NtCS4Qr/PAP-FLOORPLAN-5-1-pages-to-jpg-0001.jpg">
+						</figure>
+						<o-table :data="data" bordered hoverable narrowed>
+							<o-table-column v-for="column in columns" v-bind="column" #default="{ row }">
+								{{ row[column.field] }}
+							</o-table-column>
+						</o-table>
 					</div>
 				</div>
 			</div>
@@ -394,14 +344,34 @@ const d2lists = [
 			<div class="container">
 				<div class="columns is-multiline">
 					<div class="column is-12 has-text-centered">
-						<p class="title">SPONSORS & PARTNERS</p>
+						<p class="title">OUR SUPPORTERS</p>
 					</div>
 					<div class="column is-12">
-						<div class="columns is-multiline">
-							<div class="column is-2-desktop is-4-tablet is-6-mobile" v-for="(supporter, index) in supporters"
-								:key="index">
+						<div class="columns is-multiline is-centered is-vcentered">
+							<div class="column is-2" v-for="(supporter, i) in supporters" :key="i">
 								<figure class="image">
 									<img :src="supporter.image">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero" id="organizers">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-multiline">
+					<div class="column is-12 has-text-centered">
+						<p class="title">ORGANIZED BY</p>
+					</div>
+					<div class="column is-12">
+						<div class="columns is-multiline is-vcentered is-centered">
+							<div class="column is-2" v-for="(organizer, i) in organizers" :key="i">
+								<figure class="image is-rounded">
+									<img :src="organizer.image">
 								</figure>
 							</div>
 						</div>
@@ -414,9 +384,37 @@ const d2lists = [
 	<div class="hero" id="contact">
 		<div class="hero-body">
 			<div class="container">
-				<div class="columns">
+				<div class="columns is-multiline">
 					<div class="column is-12 has-text-centered">
 						<p class="title">CONTACT US</p>
+					</div>
+					<div class="column is-12">
+						<div class="columns is-multiline has-text-centered-desktop">
+							<div class="column is-4">
+								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4" target="_blank"><o-icon
+										size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
+							</div>
+							<div class="column is-4">
+								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4" target="_blank"><o-icon size="medium"
+										icon="instagram"></o-icon>@iemumpss</a>
+							</div>
+							<div class="column is-4">
+								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank"><o-icon size="medium"
+										icon="send-variant-outline"></o-icon>@iemumpss</a>
+							</div>
+							<div class="column is-4">
+								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"  target="_blank"><o-icon size="medium"
+										icon="linkedin"></o-icon>@iemumpss</a>
+							</div>
+							<div class="column is-4">
+								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon size="medium"
+										icon="web"></o-icon>http://iemumpss.tech</a>
+							</div>
+							<div class="column is-4">
+								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4"><o-icon size="medium"
+										icon="email"></o-icon>iem@ump.edu.my</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
