@@ -107,7 +107,7 @@ const d2lists = [
 	},
 ]
 
-const data = ref([
+const data = [
 	{
 		no: "001",
 		booth: "Huawei Consultation Booth"
@@ -132,9 +132,9 @@ const data = ref([
 		no: "006",
 		booth: "IEM Pahang"
 	},
-])
+]
 
-const columns = ref([
+const columns = [
 	{
 		field: "no",
 		label: "No",
@@ -145,7 +145,7 @@ const columns = ref([
 		label: "Booth",
 		position: "centered"
 	}
-])
+]
 </script>
 
 <template>
@@ -391,24 +391,24 @@ const columns = ref([
 					<div class="column is-12">
 						<div class="columns is-multiline has-text-centered-desktop">
 							<div class="column is-4">
-								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4" target="_blank"><o-icon
-										size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
+								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4"
+									target="_blank"><o-icon size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4" target="_blank"><o-icon size="medium"
-										icon="instagram"></o-icon>@iemumpss</a>
+								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4"
+									target="_blank"><o-icon size="medium" icon="instagram"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
 								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank"><o-icon size="medium"
 										icon="send-variant-outline"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"  target="_blank"><o-icon size="medium"
-										icon="linkedin"></o-icon>@iemumpss</a>
+								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"
+									target="_blank"><o-icon size="medium" icon="linkedin"></o-icon>@iemumpss</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon size="medium"
-										icon="web"></o-icon>http://iemumpss.tech</a>
+								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon
+										size="medium" icon="web"></o-icon>http://iemumpss.tech</a>
 							</div>
 							<div class="column is-4">
 								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4"><o-icon size="medium"
@@ -447,4 +447,5 @@ const columns = ref([
 
 .overlay-75 {
 	background-color: rgb(0, 0, 0, 0.75);
-}</style>
+}
+</style>
