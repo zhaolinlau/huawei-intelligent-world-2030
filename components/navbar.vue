@@ -46,7 +46,7 @@ const scrollToElement = (id, duration) => {
 				<a class="navbar-item is-tab" @click="scrollToElement('#booth', 500)">
 					Booth
 				</a>
-				<a class="navbar-item is-tab" @click="scrollToElement('#partners', 500)">
+				<a class="navbar-item is-tab" @click="scrollToElement('#supporters', 500)">
 					Partners
 				</a>
 				<a class="navbar-item is-tab" @click="scrollToElement('#contact', 500)">

@@ -13,25 +13,94 @@ const scrollToElement = (id, duration) => {
 
 const speakers = [
 	{
-		image: "https://images.pexels.com/photos/8348463/pexels-photo-8348463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		image: "https://i.postimg.cc/pp93Vbv5/Diana.jpg",
 		name: "Sharifah Diana Shima Binti Syed Badrol",
 		position: "Public Affairs and Communications Manager"
 	},
 	{
-		image: "https://images.pexels.com/photos/8348463/pexels-photo-8348463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		image: "https://i.postimg.cc/V5k3T0HR/Carolyn.jpg",
 		name: "Ms Carolyn Wai Kar Yin",
 		position: "System Integration & Learning Consultant"
 	},
 	{
-		image: "https://images.pexels.com/photos/8348463/pexels-photo-8348463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		image: "https://i.postimg.cc/fJ6pJ2W2/Lai-Teik-Nan.jpg",
 		name: "Mr. Lai Teik Nan",
 		position: "Data Center Solution Manager"
 	},
 	{
-		image: "https://images.pexels.com/photos/8348463/pexels-photo-8348463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+		image: "https://i.postimg.cc/RqpjzCkz/Yong-Sze-Miin.jpg",
 		name: "Ms Yong Sze Miin",
 		position: "Human Resource Manager of Asia Pacific Delivery & Service Dept"
 	}
+]
+
+const supporters = [
+	{
+		image: "https://i.postimg.cc/TpmmM6Q3/UMP-Group.png",
+		image: "https://i.postimg.cc/xCQGQcwD/UMPA.png",
+		image: "https://i.postimg.cc/xqNNM2w3/UMPH.jpg",
+		image: "https://i.postimg.cc/TKc6ptTX/CHEST-LOGO-12-NO-BACKGROUND.png",
+		image: "https://i.postimg.cc/vBdTTKLC/EEES.jpg",
+		image: "https://i.postimg.cc/p92PZgsT/Faculty-of-Computing.png",
+		image: "https://i.postimg.cc/p9Xt8Kd5/IEM-PAHANG.png",
+		image: "https://i.postimg.cc/BP13bsnh/impress.jpg",
+		image: "https://i.postimg.cc/3WP76ytz/logo-fk.png",
+		image: "https://i.postimg.cc/qNwPkgGJ/mathelites.png",
+		image: "https://i.postimg.cc/34vfDw2D/MECHAPRO.png",
+		image: "https://i.postimg.cc/N5qqD3Mc/pemaju.png",
+		image: "https://i.postimg.cc/N57V4LS6/PETAKOM.png",
+		image: "https://i.postimg.cc/JH4sysk1/scets.png",
+		image: "https://i.postimg.cc/0MT3tS9f/scitexs.png",
+		image: "https://i.postimg.cc/3JyhMB2G/smach.png",
+		image: "https://i.postimg.cc/q62FW7Rd/UHCC.png",
+		image: "https://i.postimg.cc/14Fb8vKY/UMPBOT.png",
+	}
+]
+
+const d1lists = [
+	{
+		title: "9.00 am – 9.30 am",
+		desc: "Arrival of students & guests"
+	},
+	{
+		title: "9.30 am – 9.45 am",
+		desc: "Arrival of Vice Chancellor Assistant, Huawei VIPs, Honourable guests"
+	},
+	{
+		title: "9.45 am – 10.05 am",
+		desc: 'Welcoming Speech by Event Emcees, National Anthem "Negaraku", UMP Anthem "UMP Maju Gemilang", Doa Recitation'
+	},
+	{
+		title: "10.05 am – 10.30 am",
+		desc: "Opening Ceremony of 1st Huawei Open Day: Intelligent World 2030, Welcoming Address by Professor Madya IR. Dr Nurul Hazlina Binti Noordin Universiti Malaysia Pahang, Welcoming Address by Huawei VIP, Opening Montage"
+	},
+	{
+		title: "11.30 am – 12.30 pm",
+		desc: "Elevate Your Potential with Huawei + Q&A"
+	},
+	{
+		title: "12.30 pm - 12.40 PM",
+		desc: "Souvenir Presentation + Photo Session"
+	},
+	{
+		title: "12.40 Pm – 1.30 pm",
+		desc: "Lunch Break"
+	},
+	{
+		title: "1.30 Pm – 5.00 pm",
+		desc: "Career Booth: Career Consultation, Resume Review & Interview"
+	},
+	{
+		title: "5.00 pm ",
+		desc: "The End"
+	},
+]
+
+const d2lists = [
+	{
+		title: "10.00 am – 5.00 Pm",
+		desc: "Career Booth: Career Consultation, Resume Review & Interview"
+	},
 ]
 </script>
 
@@ -122,7 +191,7 @@ const speakers = [
 						<div class="card">
 							<div class="card-image">
 								<figure class="image">
-									<img :src="speaker.image" alt="{{ speaker.image }}">
+									<img :src="speaker.image">
 								</figure>
 							</div>
 							<div class="card-content">
@@ -149,45 +218,21 @@ const speakers = [
 							<div class="column is-6-desktop is-12">
 								<p class="title is-5 has-text-centered">9th May 2023</p>
 								<div class="list">
-									<div class="list-item box">
+									<div class="list-item box" v-for="(list, i) in d1lists" :key="i">
 										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
-										</div>
-									</div>
-									<div class="list-item box">
-										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
-										</div>
-									</div>
-									<div class="list-item box">
-										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
+											<div class="list-item-title">{{ list.title }}</div>
+											<div class="list-item-description">{{ list.desc }}</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="column is-6">
+							<div class="column is-6-desktop is-12">
 								<p class="title is-5 has-text-centered">10th May 2023</p>
 								<div class="list">
-									<div class="list-item box">
+									<div class="list-item box" v-for="(list, i) in d2lists" :key="i">
 										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
-										</div>
-									</div>
-									<div class="list-item box">
-										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
-										</div>
-									</div>
-									<div class="list-item box">
-										<div class="list-item-content">
-											<div class="list-item-title">List item</div>
-											<div class="list-item-description">List item description</div>
+											<div class="list-item-title">{{ list.title }}</div>
+											<div class="list-item-description">{{ list.desc }}</div>
 										</div>
 									</div>
 								</div>
@@ -202,10 +247,26 @@ const speakers = [
 	<div class="hero" id="venue">
 		<div class="hero-body">
 			<div class="container">
-				<div class="columns">
+				<div class="columns is-multiline">
 					<div class="column is-12 has-text-centered">
 						<p class="title">EVENT VENUE</p>
 						<p class="subtitle">Event venue location info</p>
+					</div>
+					<div class="column is-12 is-flex is-justify-content-center">
+						<div class="columns is-multiline">
+							<div class="column is-6-desktop is-12">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15928.777610872914!2d103.4315453!3d3.5425774!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cf513f7d5a510b%3A0x8bea0c68edc5095a!2sPerpustakaan%20Universiti%20Malaysia%20Pahang%20(UMP)%20Kampus%20Pekan!5e0!3m2!1sen!2smy!4v1683564687312!5m2!1sen!2smy"
+									width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							<div class="column is-6-desktop is-12">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15928.837103253798!2d103.40877318715822!3d3.539119099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cf517f7f32213f%3A0x1dddb917b020eadd!2sPusat%20Aktiviti%20Pelajar%20(PAP)%2C%20UMP%20Pekan!5e0!3m2!1sen!2smy!4v1683564786738!5m2!1sen!2smy"
+									width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -223,20 +284,20 @@ const speakers = [
 						<div class="tile is-ancestor">
 							<div class="tile is-parent">
 								<article class="tile is-child box">
-									<p class="title">Hello World</p>
-									<p class="subtitle">What is up?</p>
+									<p class="title">Lorem, ipsum.</p>
+									<p class="subtitle">Lorem, ipsum dolor.</p>
 								</article>
 							</div>
 							<div class="tile is-parent">
 								<article class="tile is-child box">
-									<p class="title">Foo</p>
-									<p class="subtitle">Bar</p>
+									<p class="title">Lorem.</p>
+									<p class="subtitle">Lorem.</p>
 								</article>
 							</div>
 							<div class="tile is-parent">
 								<article class="tile is-child box">
-									<p class="title">Third column</p>
-									<p class="subtitle">With some content</p>
+									<p class="title">Lorem, ipsum.</p>
+									<p class="subtitle">Lorem, ipsum dolor.</p>
 									<div class="content">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
 											tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
@@ -250,31 +311,29 @@ const speakers = [
 								<div class="tile">
 									<div class="tile is-parent is-vertical">
 										<article class="tile is-child box">
-											<p class="title">Vertical tiles</p>
-											<p class="subtitle">Top box</p>
+											<p class="title">Lorem, ipsum.</p>
+											<p class="subtitle">Lorem, ipsum.</p>
 										</article>
 										<article class="tile is-child box">
-											<p class="title">Vertical tiles</p>
-											<p class="subtitle">Bottom box</p>
+											<p class="title">Lorem, ipsum.</p>
+											<p class="subtitle">Lorem, ipsum.</p>
 										</article>
 									</div>
 									<div class="tile is-parent">
 										<article class="tile is-child box">
-											<p class="title">Middle box</p>
-											<p class="subtitle">With an image</p>
-											<figure class="image is-4by3">
-												<img src="https://bulma.io/images/placeholders/640x480.png">
-											</figure>
+											<p class="title">Lorem, ipsum.</p>
+											<p class="subtitle">Lorem, ipsum dolor.</p>
 										</article>
 									</div>
 								</div>
 								<div class="tile is-parent">
 									<article class="tile is-child box">
-										<p class="title">Wide column</p>
-										<p class="subtitle">Aligned with the right column</p>
+										<p class="title">Lorem, ipsum.</p>
+										<p class="subtitle">Lorem ipsum dolor sit amet.</p>
 										<div class="content">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-												tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nulla voluptatum fugiat
+												voluptatibus temporibus aut enim quaerat quisquam culpa, laboriosam libero modi magni tenetur,
+												voluptate tempore ratione repudiandae voluptates esse.</p>
 										</div>
 									</article>
 								</div>
@@ -282,21 +341,18 @@ const speakers = [
 							<div class="tile is-parent">
 								<article class="tile is-child box">
 									<div class="content">
-										<p class="title">Tall column</p>
-										<p class="subtitle">With even more content</p>
+										<p class="title">Lorem, ipsum.</p>
+										<p class="subtitle">Lorem ipsum dolor sit.</p>
 										<div class="content">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
-												pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
-												Morbi maximus, leo sit amet vehicula eleifend, nunc dui porta orci, quis semper odio felis ut
-												quam.</p>
-											<p>Suspendisse varius ligula in molestie lacinia. Maecenas varius eget ligula a sagittis.
-												Pellentesque interdum, nisl nec interdum maximus, augue diam porttitor lorem, et sollicitudin
-												felis neque sit amet erat. Maecenas imperdiet felis nisi, fringilla luctus felis hendrerit sit
-												amet. Aenean vitae gravida diam, finibus dignissim turpis. Sed eget varius ligula, at volutpat
-												tortor.</p>
-											<p>Integer sollicitudin, tortor a mattis commodo, velit urna rhoncus erat, vitae congue lectus dolor
-												consequat libero. Donec leo ligula, maximus et pellentesque sed, gravida a metus. Cras ullamcorper
-												a nunc ac porta. Aliquam ut aliquet lacus, quis faucibus libero. Quisque non semper leo.</p>
+											<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae quod provident optio, dicta
+												dignissimos neque ratione repellendus nihil minima ea inventore ipsum ut velit dolore facilis
+												distinctio eveniet et voluptas?</p>
+											<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias recusandae harum ipsum quaerat
+												laudantium ea. Neque quia sapiente libero cum magnam aut a eaque porro. Quis, suscipit! Itaque,
+												magnam sapiente?</p>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus asperiores illo nisi
+												maxime autem blanditiis dolore nihil repudiandae nesciunt dolores sed expedita, odit qui,
+												perferendis libero fugit deleniti aliquid ipsa?</p>
 										</div>
 									</div>
 								</article>
@@ -306,21 +362,23 @@ const speakers = [
 						<div class="tile is-ancestor">
 							<div class="tile is-parent">
 								<article class="tile is-child box">
-									<p class="title">Side column</p>
-									<p class="subtitle">With some content</p>
+									<p class="title">Lorem, ipsum.</p>
+									<p class="subtitle">Lorem, ipsum.</p>
 									<div class="content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-											tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, assumenda obcaecati corrupti
+											harum possimus consectetur fuga laboriosam, ex, sit reprehenderit quo rem dignissimos iure repellat
+											autem! Repudiandae enim impedit magnam?</p>
 									</div>
 								</article>
 							</div>
 							<div class="tile is-parent is-8">
 								<article class="tile is-child box">
-									<p class="title">Main column</p>
-									<p class="subtitle">With some content</p>
+									<p class="title">Lorem, ipsum.</p>
+									<p class="subtitle">Lorem, ipsum dolor.</p>
 									<div class="content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-											tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, neque quam facere consequuntur
+											nisi vero quaerat placeat quos. Vero illo quam quod dignissimos delectus amet id voluptatem
+											molestiae, nihil ab.</p>
 									</div>
 								</article>
 							</div>
@@ -331,7 +389,7 @@ const speakers = [
 		</div>
 	</div>
 
-	<div class="hero" id="partners">
+	<div class="hero" id="supporters">
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns is-multiline">
@@ -340,27 +398,12 @@ const speakers = [
 					</div>
 					<div class="column is-12">
 						<div class="columns is-multiline">
-							<div class="column">
+							<div class="column is-2-desktop is-4-tablet is-6-mobile" v-for="(supporter, index) in supporters"
+								:key="index">
 								<figure class="image">
-									<img src="https://www.ump.edu.my/img/logo-ump-tvet-1.png" alt="">
+									<img :src="supporter.image">
 								</figure>
-							</div><div class="column">
-									<figure class="image">
-										<img src="https://www.ump.edu.my/img/logo-ump-tvet-1.png" alt="">
-									</figure>
-								</div><div class="column">
-									<figure class="image">
-										<img src="https://www.ump.edu.my/img/logo-ump-tvet-1.png" alt="">
-									</figure>
-								</div><div class="column">
-									<figure class="image">
-										<img src="https://www.ump.edu.my/img/logo-ump-tvet-1.png" alt="">
-									</figure>
-								</div><div class="column">
-									<figure class="image">
-										<img src="https://www.ump.edu.my/img/logo-ump-tvet-1.png" alt="">
-									</figure>
-								</div>
+							</div>
 						</div>
 					</div>
 				</div>
