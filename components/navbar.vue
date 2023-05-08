@@ -43,9 +43,9 @@ const scrollToElement = (id) => {
 				<a class="navbar-item is-tab" @click="scrollToElement('#venue', 500)">
 					Venue
 				</a>
-				<a class="navbar-item is-tab" @click="scrollToElement('#booth', 500)">
+				<!-- <a class="navbar-item is-tab" @click="scrollToElement('#booth', 500)">
 					Booth
-				</a>
+				</a> -->
 				<a class="navbar-item is-tab" @click="scrollToElement('#supporters', 500)">
 					Supporters
 				</a>

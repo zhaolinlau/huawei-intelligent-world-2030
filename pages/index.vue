@@ -108,45 +108,45 @@ const d2lists = [
 	},
 ]
 
-const data = [
-	{
-		no: "001",
-		booth: "Huawei Consultation Booth"
-	},
-	{
-		no: "002",
-		booth: "Huawei Consultation Booth"
-	},
-	{
-		no: "003",
-		booth: "Huawei Consultation Booth"
-	},
-	{
-		no: "004",
-		booth: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
-	},
-	{
-		no: "005",
-		booth: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
-	},
-	{
-		no: "006",
-		booth: "IEM Pahang"
-	},
-]
+// const data = [
+// 	{
+// 		no: "001",
+// 		booth: "Huawei Consultation Booth"
+// 	},
+// 	{
+// 		no: "002",
+// 		booth: "Huawei Consultation Booth"
+// 	},
+// 	{
+// 		no: "003",
+// 		booth: "Huawei Consultation Booth"
+// 	},
+// 	{
+// 		no: "004",
+// 		booth: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
+// 	},
+// 	{
+// 		no: "005",
+// 		booth: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
+// 	},
+// 	{
+// 		no: "006",
+// 		booth: "IEM Pahang"
+// 	},
+// ]
 
-const columns = [
-	{
-		field: "no",
-		label: "No",
-		position: "centered"
-	},
-	{
-		field: "booth",
-		label: "Booth",
-		position: "centered"
-	}
-]
+// const columns = [
+// 	{
+// 		field: "no",
+// 		label: "No",
+// 		position: "centered"
+// 	},
+// 	{
+// 		field: "booth",
+// 		label: "Booth",
+// 		position: "centered"
+// 	}
+// ]
 </script>
 
 <template>
@@ -318,7 +318,7 @@ const columns = [
 		</div>
 	</div>
 
-	<div class="hero" id="booth">
+	<!-- <div class="hero" id="booth">
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns is-multiline">
@@ -338,7 +338,7 @@ const columns = [
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="hero" id="supporters">
 		<div class="hero-body">
