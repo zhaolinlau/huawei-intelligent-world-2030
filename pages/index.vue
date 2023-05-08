@@ -1,11 +1,11 @@
 <script setup>
 import { ref } from 'vue'
-import navbar from '~/components/navbar.vue';
-import ofooter from '~/components/footer.vue'
+import navbar from '@/components/navbar.vue';
+import ofooter from '@/components/footer.vue'
 import VueScrollTo from 'vue-scrollto';
 
 const isVideoModalActive = ref(false)
-const scrollToElement = (id, duration) => {
+const scrollToElement = (id) => {
 	VueScrollTo.scrollTo(id, {
 		duration: 500,
 	});
@@ -57,6 +57,7 @@ const organizers = [
 	{ image: "https://i.postimg.cc/vZC9TwTs/340401796-760010555619055-2976762322369776021-n.jpg" },
 	{ image: "https://i.postimg.cc/hv1dvXwz/335218020-589255826576673-3831463242205828873-n.jpg" }
 ]
+
 const d1lists = [
 	{
 		title: "9.00 am – 9.30 am",
