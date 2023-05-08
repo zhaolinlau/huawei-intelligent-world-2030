@@ -108,45 +108,32 @@ const d2lists = [
 	},
 ]
 
-// const data = [
-// 	{
-// 		no: "001",
-// 		booth: "Huawei Consultation Booth"
-// 	},
-// 	{
-// 		no: "002",
-// 		booth: "Huawei Consultation Booth"
-// 	},
-// 	{
-// 		no: "003",
-// 		booth: "Huawei Consultation Booth"
-// 	},
-// 	{
-// 		no: "004",
-// 		booth: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
-// 	},
-// 	{
-// 		no: "005",
-// 		booth: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
-// 	},
-// 	{
-// 		no: "006",
-// 		booth: "IEM Pahang"
-// 	},
-// ]
-
-// const columns = [
-// 	{
-// 		field: "no",
-// 		label: "No",
-// 		position: "centered"
-// 	},
-// 	{
-// 		field: "booth",
-// 		label: "Booth",
-// 		position: "centered"
-// 	}
-// ]
+const booths = [
+	{
+		no: "001",
+		name: "Huawei Consultation Booth"
+	},
+	{
+		no: "002",
+		name: "Huawei Consultation Booth"
+	},
+	{
+		no: "003",
+		name: "Huawei Consultation Booth"
+	},
+	{
+		no: "004",
+		name: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
+	},
+	{
+		no: "005",
+		name: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
+	},
+	{
+		no: "006",
+		name: "IEM Pahang"
+	},
+]
 </script>
 
 <template>
@@ -318,7 +305,7 @@ const d2lists = [
 		</div>
 	</div>
 
-	<!-- <div class="hero" id="booth">
+	<div class="hero" id="booth">
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns is-multiline">
@@ -329,16 +316,25 @@ const d2lists = [
 						<figure class="image">
 							<img src="https://i.postimg.cc/4NtCS4Qr/PAP-FLOORPLAN-5-1-pages-to-jpg-0001.jpg">
 						</figure>
-						<o-table :data="data" bordered hoverable narrowed>
-							<o-table-column v-for="column in columns" v-bind="column" #default="{ row }">
-								{{ row[column.field] }}
-							</o-table-column>
-						</o-table>
+						<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
+							<thead>
+								<tr>
+									<th class="has-text-centered">No</th>
+									<th class="has-text-centered">Booth</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr v-for="(booth, i) in booths" :key="i">
+									<td>{{ booth.no }}</td>
+									<td>{{ booth.name }}</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<div class="hero" id="supporters">
 		<div class="hero-body">
