@@ -388,27 +388,52 @@ const booths = [
 						<div class="columns is-multiline has-text-centered-desktop">
 							<div class="column is-4">
 								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4"
-									target="_blank"><o-icon size="medium" icon="facebook"></o-icon>@IEMUMPStudentSection</a>
+									target="_blank">
+									<span class="icon-text">
+										<span class="mdi mdi-facebook mdi-36px"></span>
+										<span>@IEMUMPStudentSection</span>
+									</span>
+								</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4"
-									target="_blank"><o-icon size="medium" icon="instagram"></o-icon>@iemumpss</a>
+								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4" target="_blank">
+									<span class="icon-text">
+										<span class="mdi mdi-instagram mdi-36px"></span>
+										<span>@iemumpss</span>
+									</span>
+								</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank"><o-icon size="medium"
-										icon="send-variant-outline"></o-icon>@iemumpss</a>
+								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank">
+									<span class="icon-text">
+										<span class="mdi mdi-send-variant-outline mdi-36px"></span>
+										<span>@iemumpss</span>
+									</span>
+								</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4"
-									target="_blank"><o-icon size="medium" icon="linkedin"></o-icon>@iemumpss</a>
+								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4" target="_blank">
+									<span class="icon-text">
+										<span class="mdi mdi-linkedin mdi-36px"></span>
+										<span>@iemumpss</span>
+									</span>
+								</a>
 							</div>
 							<div class="column is-4">
-								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank"><o-icon
-										size="medium" icon="web"></o-icon>http://iemumpss.tech</a>
+								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank">
+									<span class="icon-text">
+										<span class="mdi mdi-web mdi-36px"></span>
+										<span>http://iemumpss.tech</span>
+									</span>
+								</a>
 							</div>
 							<div class="column is-4">
-								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4"><o-icon size="medium"
-										icon="email"></o-icon>iem@ump.edu.my</a>
+								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4">
+									<span class="icon-text">
+										<span class="mdi mdi-email mdi-36px"></span>
+										<span>iem@ump.edu.my</span>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
