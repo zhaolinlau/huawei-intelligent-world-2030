@@ -35,7 +35,6 @@ const speakers = [
 ]
 
 const supporters = [
-	{ image: "https://i.postimg.cc/PrFZZ4BM/224839649-4571043749596940-3508388015328649113-n.jpg" },
 	{ image: "https://i.postimg.cc/KYMF8G22/290915818-459587816173021-8791722411229248030-n.png" },
 	{ image: "https://i.postimg.cc/vBdTTKLC/EEES.jpg" },
 	{ image: "https://i.postimg.cc/sfP8mBc8/301788814-536838291574946-1680698317962699745-n.png" },
