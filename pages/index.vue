@@ -13,48 +13,48 @@ const scrollToElement = (id) => {
 
 const speakers = [
 	{
-		image: "/img/Diana.jpg",
+		image: "/img/speakers/Diana.jpg",
 		name: "Sharifah Diana Shima Binti Syed Badrol",
 		position: "Public Affairs and Communications Manager"
 	},
 	{
-		image: "/img/Carolyn.jpg",
+		image: "/img/speakers/Carolyn.jpg",
 		name: "Ms Carolyn Wai Kar Yin",
 		position: "System Integration & Learning Consultant"
 	},
 	{
-		image: "/img/Lai-Teik-Nan.jpg",
+		image: "/img/speakers/Lai-Teik-Nan.jpg",
 		name: "Mr. Lai Teik Nan",
 		position: "Data Center Solution Manager"
 	},
 	{
-		image: "/img/Yong-Sze-Miin.jpg",
+		image: "/img/speakers/Yong-Sze-Miin.jpg",
 		name: "Ms Yong Sze Miin",
 		position: "Human Resource Manager of Asia Pacific Delivery & Service Dept"
 	}
 ]
 
 const supporters = [
-	{ image: "https://i.postimg.cc/KYMF8G22/290915818-459587816173021-8791722411229248030-n.png" },
-	{ image: "https://i.postimg.cc/vBdTTKLC/EEES.jpg" },
-	{ image: "https://i.postimg.cc/sfP8mBc8/301788814-536838291574946-1680698317962699745-n.png" },
-	{ image: "https://i.postimg.cc/PJS565sk/impress.jpg" },
-	{ image: "https://i.postimg.cc/FRW12BPY/240666240-101090099035044-6958351829623848979-n.jpg" },
-	{ image: "https://i.postimg.cc/mDdvJzDV/MECHAPRO.png" },
-	{ image: "https://i.postimg.cc/ZRKCsSLk/302707486-447192010795590-2907579453933473140-n.png" },
-	{ image: "https://i.postimg.cc/t4Q7QPzN/241042263-3114397288782316-3738434718613349861-n.png" },
-	{ image: "https://i.postimg.cc/YS74ggGC/270247051-102871622274596-9039080927905901191-n.jpg" },
-	{ image: "https://i.postimg.cc/q7GNGRyX/319928380-1289578088492140-4805146637763397241-n.jpg" },
-	{ image: "https://i.postimg.cc/3JyhMB2G/smach.png" },
-	{ image: "https://i.postimg.cc/QMZ7bwPs/132662373-602151230576848-9111131740841833489-n.jpg" },
-	{ image: "https://i.postimg.cc/4xV7mw30/302804716-595231032306052-1473994289169221361-n.png" }
+	{ image: "/img/supporters/chest.png" },
+	{ image: "/img/supporters/eees.jpg" },
+	{ image: "/img/supporters/fk.png" },
+	{ image: "/img/supporters/impress.jpg" },
+	{ image: "/img/supporters/math_elites.jpg" },
+	{ image: "/img/supporters/mechapro.png" },
+	{ image: "/img/supporters/pemaju.png" },
+	{ image: "/img/supporters/petakom.png" },
+	{ image: "/img/supporters/scets.jpg" },
+	{ image: "/img/supporters/scitexs.jpg" },
+	{ image: "/img/supporters/smach.png" },
+	{ image: "/img/supporters/uhcc.jpg" },
+	{ image: "/img/supporters/umpbot.png" }
 ]
 
 const organizers = [
-	{ image: "https://i.postimg.cc/3wCJYrhc/244139631-4492807177446443-647111529422559624-n.png" },
-	{ image: "https://i.postimg.cc/DfDWCZwr/305809210-538640921397860-8876311118138085153-n.jpg" },
-	{ image: "https://i.postimg.cc/vZC9TwTs/340401796-760010555619055-2976762322369776021-n.jpg" },
-	{ image: "https://i.postimg.cc/hv1dvXwz/335218020-589255826576673-3831463242205828873-n.jpg" }
+	{ image: "/img/organizers/ump.png" },
+	{ image: "/img/organizers/iem_ump.jpg" },
+	{ image: "/img/organizers/engineering_week.jpg" },
+	{ image: "/img/organizers/huawei.jpg" }
 ]
 
 const d1lists = [
