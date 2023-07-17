@@ -1,14 +1,4 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
-
-const loadingIndicator = ref(true)
-
-onMounted(() => {
-	window.addEventListener('load', () => {
-		loadingIndicator.value = false;
-	});
-});
-
 useHead({
 	title: 'Huawei Open Day: Intelligent World 2030',
 	meta: [
@@ -27,10 +17,7 @@ useSeoMeta({
 </script>
 
 <template>
-	<o-loading :active="loadingIndicator">
-		<o-icon pack="mdi" icon="loading" size="large"></o-icon>
-	</o-loading>
-	<div v-if="loadingIndicator == false">
+	<div>
 		<RouterView />
 	</div>
 </template>
