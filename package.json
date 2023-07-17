@@ -18,7 +18,6 @@
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
-    "@nuxtjs/web-vitals": "^0.2.6",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@oruga-ui/theme-bulma": "^0.2.11",
     "bulma-list": "^1.2.0",
