@@ -7,7 +7,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-		"css-build": "node-sass --output-style compressed --omit-source-map-url assets/sass/bulma.scss assets/css/bulma.min.css",
+    "css-build": "node-sass --output-style compressed --omit-source-map-url assets/sass/bulma.scss assets/css/bulma.min.css",
     "css-watch": "pnpm run css-build -- --watch",
     "start": "pnpm run css-watch"
   },

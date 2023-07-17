@@ -13,22 +13,22 @@ const scrollToElement = (id) => {
 
 const speakers = [
 	{
-		image: "/assets/img/Diana.jpg",
+		image: "/public/img/Diana.jpg",
 		name: "Sharifah Diana Shima Binti Syed Badrol",
 		position: "Public Affairs and Communications Manager"
 	},
 	{
-		image: "/assets/img/Carolyn.jpg",
+		image: "/public/img/Carolyn.jpg",
 		name: "Ms Carolyn Wai Kar Yin",
 		position: "System Integration & Learning Consultant"
 	},
 	{
-		image: "/assets/img/Lai-Teik-Nan.jpg",
+		image: "/public/img/Lai-Teik-Nan.jpg",
 		name: "Mr. Lai Teik Nan",
 		position: "Data Center Solution Manager"
 	},
 	{
-		image: "/assets/img/Yong-Sze-Miin.jpg",
+		image: "/public/img/Yong-Sze-Miin.jpg",
 		name: "Ms Yong Sze Miin",
 		position: "Human Resource Manager of Asia Pacific Delivery & Service Dept"
 	}
@@ -447,7 +447,7 @@ const booths = [
 
 <style>
 #home {
-	background-image: url("@/assets/img/home.jpg");
+	background-image: url("/img/home.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -455,7 +455,7 @@ const booths = [
 }
 
 #about {
-	background-image: url("@/assets/img/about.jpg");
+	background-image: url("/img/about.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
