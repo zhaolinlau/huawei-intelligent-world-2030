@@ -13,22 +13,22 @@ const scrollToElement = (id) => {
 
 const speakers = [
 	{
-		image: "/public/img/Diana.jpg",
+		image: "/img/Diana.jpg",
 		name: "Sharifah Diana Shima Binti Syed Badrol",
 		position: "Public Affairs and Communications Manager"
 	},
 	{
-		image: "/public/img/Carolyn.jpg",
+		image: "/img/Carolyn.jpg",
 		name: "Ms Carolyn Wai Kar Yin",
 		position: "System Integration & Learning Consultant"
 	},
 	{
-		image: "/public/img/Lai-Teik-Nan.jpg",
+		image: "/img/Lai-Teik-Nan.jpg",
 		name: "Mr. Lai Teik Nan",
 		position: "Data Center Solution Manager"
 	},
 	{
-		image: "/public/img/Yong-Sze-Miin.jpg",
+		image: "/img/Yong-Sze-Miin.jpg",
 		name: "Ms Yong Sze Miin",
 		position: "Human Resource Manager of Asia Pacific Delivery & Service Dept"
 	}
