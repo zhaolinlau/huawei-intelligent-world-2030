@@ -8,8 +8,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
 		"css-build": "node-sass --omit-source-map-url assets/sass/bulma.scss assets/css/bulma.css",
-		"css-watch": "npm run css-build -- --watch",
-		"start": "npm run css-watch"
+		"css-watch": "pnpm run css-build -- --watch",
+		"start": "pnpm run css-watch"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
