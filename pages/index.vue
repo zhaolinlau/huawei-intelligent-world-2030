@@ -10,6 +10,7 @@ const scrollToElement = (id) => {
 </script>
 
 <template>
+	<BackTop />
 	<div class="hero is-fullheight" id="home">
 		<div class="hero-head overlay-50">
 			<AppBar />
