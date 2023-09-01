@@ -27,9 +27,6 @@ const scrollToElement = (id) => {
 
 		<div class="navbar-menu has-text-weight-bold" :class="{ 'is-active': showNav }">
 			<div class="navbar-end">
-				<a class="navbar-item is-tab" @click="scrollToElement('#home', 500)">
-					Home
-				</a>
 				<a class="navbar-item is-tab" @click="scrollToElement('#about', 500)">
 					About
 				</a>

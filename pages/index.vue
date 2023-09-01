@@ -7,129 +7,6 @@ const scrollToElement = (id) => {
 		duration: 500,
 	});
 };
-
-const speakers = [
-	{
-		image: "/img/speakers/Diana.jpg",
-		name: "Sharifah Diana Shima Binti Syed Badrol",
-		position: "Public Affairs and Communications Manager"
-	},
-	{
-		image: "/img/speakers/Carolyn.jpg",
-		name: "Ms Carolyn Wai Kar Yin",
-		position: "System Integration & Learning Consultant"
-	},
-	{
-		image: "/img/speakers/Lai-Teik-Nan.jpg",
-		name: "Mr. Lai Teik Nan",
-		position: "Data Center Solution Manager"
-	},
-	{
-		image: "/img/speakers/Yong-Sze-Miin.jpg",
-		name: "Ms Yong Sze Miin",
-		position: "Human Resource Manager of Asia Pacific Delivery & Service Dept"
-	}
-]
-
-const supporters = [
-	{ image: "/img/supporters/chest.png" },
-	{ image: "/img/supporters/eees.jpg" },
-	{ image: "/img/supporters/fk.png" },
-	{ image: "/img/supporters/impress.jpg" },
-	{ image: "/img/supporters/math_elites.jpg" },
-	{ image: "/img/supporters/mechapro.png" },
-	{ image: "/img/supporters/pemaju.png" },
-	{ image: "/img/supporters/petakom.png" },
-	{ image: "/img/supporters/scets.jpg" },
-	{ image: "/img/supporters/scitexs.jpg" },
-	{ image: "/img/supporters/smach.png" },
-	{ image: "/img/supporters/uhcc.jpg" },
-	{ image: "/img/supporters/umpbot.png" }
-]
-
-const organizers = [
-	{ image: "/img/organizers/ump.png" },
-	{ image: "/img/organizers/iem_ump.jpg" },
-	{ image: "/img/organizers/engineering_week.jpg" },
-	{ image: "/img/organizers/huawei.jpg" }
-]
-
-const d1lists = [
-	{
-		title: "9.00 am – 9.30 am",
-		desc: "Arrival of students & guests"
-	},
-	{
-		title: "9.30 am – 9.50 am",
-		desc: "Arrival of Vice Chancellor Assistant, Huawei VIPs, Honourable guests"
-	},
-	{
-		title: "9.50 am – 10.00 am",
-		desc: "Opening Ceremony of 1st Huawei Open Day: Intelligent World 2030, Welcoming Speech of Professor Madya IR. Dr Nurul Hazlina Binti Noordin Universiti Malaysia Pahang"
-	},
-	{
-		title: "10.00 am – 10.05 am",
-		desc: "Speech by Jehovah Yii Zui Hon, Opening Montage"
-	},
-	{
-		title: "10.05 am – 10.20 am",
-		desc: "Introduction of Huawei Malaysia by Ms. Sharifah Diana Shima Binti Syed Badrol + Q&A"
-	},
-	{
-		title: "10.20 am – 10.50 pm",
-		desc: "Intelligent World 2030 (Insight into ICT trends and their application) by Ms. Carolyn Wai Kar Yin + Q&A"
-	},
-	{
-		title: "10.50 pm - 11.20 PM",
-		desc: "Energy Digitalization: Green ICT Power by Mr. Lai Teik Nan + Q&A"
-	},
-	{
-		title: "10.50 pm - 11.20 PM",
-		desc: "Elevate your Potential with Huawei by Ms. Yong Sze Miin + Q&A"
-	},
-	{
-		title: "11.20 Pm – 12.20 pm",
-		desc: "Souvenir Presentation + Photo Session + Closing"
-	},
-	{
-		title: "1.30 Pm – 5.00 pm",
-		desc: "Career Booth: Career Consultation, Resume Review & Interview"
-	},
-]
-
-const d2lists = [
-	{
-		title: "10.00 am – 5.00 Pm",
-		desc: "Career Booth: Career Consultation, Resume Review & Interview"
-	},
-]
-
-const booths = [
-	{
-		no: "001",
-		name: "Huawei Consultation Booth"
-	},
-	{
-		no: "002",
-		name: "Huawei Consultation Booth"
-	},
-	{
-		no: "003",
-		name: "Huawei Consultation Booth"
-	},
-	{
-		no: "004",
-		name: "Kiran Pandia - Sign language recognition using deep learning(MySLR)"
-	},
-	{
-		no: "005",
-		name: "Dr. Azraai Mohd Razman - IOT based Smart Farming System(agronetics.net)"
-	},
-	{
-		no: "006",
-		name: "IEM Pahang"
-	},
-]
 </script>
 
 <template>
@@ -215,19 +92,7 @@ const booths = [
 						<p class="title">EVENT SPEAKERS</p>
 						<p class="subtitle">Here are our speakers</p>
 					</div>
-					<div class="column is-3-desktop is-6-tablet is-12-mobile" v-for="(speaker, i) in speakers" :key="i">
-						<div class="card">
-							<div class="card-image">
-								<figure class="image">
-									<img :src="speaker.image">
-								</figure>
-							</div>
-							<div class="card-content">
-								<p class="title is-4">{{ speaker.name }}</p>
-								<p class="subtitle is-6 has-text-primary is-italic">{{ speaker.position }}</p>
-							</div>
-						</div>
-					</div>
+					<SpeakerCards />
 				</div>
 			</div>
 		</div>
@@ -242,30 +107,7 @@ const booths = [
 						<p class="subtitle">Here is our event schedule</p>
 					</div>
 					<div class="column is-12">
-						<div class="columns is-multiline">
-							<div class="column is-6-desktop is-12">
-								<p class="title is-5 has-text-centered">9th May 2023</p>
-								<div class="list">
-									<div class="list-item box" v-for="(list, i) in d1lists" :key="i">
-										<div class="list-item-content">
-											<div class="list-item-title">{{ list.title }}</div>
-											<div class="list-item-description">{{ list.desc }}</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="column is-6-desktop is-12">
-								<p class="title is-5 has-text-centered">10th May 2023</p>
-								<div class="list">
-									<div class="list-item box" v-for="(list, i) in d2lists" :key="i">
-										<div class="list-item-content">
-											<div class="list-item-title">{{ list.title }}</div>
-											<div class="list-item-description">{{ list.desc }}</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<ScheduleList />
 					</div>
 				</div>
 			</div>
@@ -310,22 +152,9 @@ const booths = [
 					</div>
 					<div class="column is-12">
 						<figure class="image">
-							<img src="https://i.postimg.cc/4NtCS4Qr/PAP-FLOORPLAN-5-1-pages-to-jpg-0001.jpg">
+							<nuxt-img src="https://i.postimg.cc/4NtCS4Qr/PAP-FLOORPLAN-5-1-pages-to-jpg-0001.jpg" />
 						</figure>
-						<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-text-centered">
-							<thead>
-								<tr>
-									<th class="has-text-centered">No</th>
-									<th class="has-text-centered">Booth</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr v-for="(booth, i) in booths" :key="i">
-									<td>{{ booth.no }}</td>
-									<td>{{ booth.name }}</td>
-								</tr>
-							</tbody>
-						</table>
+						<BoothTable />
 					</div>
 				</div>
 			</div>
@@ -341,11 +170,7 @@ const booths = [
 					</div>
 					<div class="column is-12">
 						<div class="columns is-multiline is-centered is-vcentered">
-							<div class="column is-2" v-for="(supporter, i) in supporters" :key="i">
-								<figure class="image">
-									<img :src="supporter.image">
-								</figure>
-							</div>
+							<SupporterLogos />
 						</div>
 					</div>
 				</div>
@@ -362,11 +187,7 @@ const booths = [
 					</div>
 					<div class="column is-12">
 						<div class="columns is-multiline is-vcentered is-centered">
-							<div class="column is-2" v-for="(organizer, i) in organizers" :key="i">
-								<figure class="image is-rounded">
-									<img :src="organizer.image">
-								</figure>
-							</div>
+							<OrganizerLogos />
 						</div>
 					</div>
 				</div>
@@ -382,57 +203,7 @@ const booths = [
 						<p class="title">CONTACT US</p>
 					</div>
 					<div class="column is-12">
-						<div class="columns is-multiline has-text-centered-desktop">
-							<div class="column is-4">
-								<a href="https://www.facebook.com/IEMUMPStudentSection/" class="has-text-link-dark is-size-4"
-									target="_blank">
-									<span class="icon-text">
-										<span class="mdi mdi-facebook mdi-36px"></span>
-										<span>@IEMUMPStudentSection</span>
-									</span>
-								</a>
-							</div>
-							<div class="column is-4">
-								<a href="https://www.instagram.com/iemumpss/" class="has-text-danger-dark is-size-4" target="_blank">
-									<span class="icon-text">
-										<span class="mdi mdi-instagram mdi-36px"></span>
-										<span>@iemumpss</span>
-									</span>
-								</a>
-							</div>
-							<div class="column is-4">
-								<a href="https://t.me/iemumpss" class="has-text-info is-size-4" target="_blank">
-									<span class="icon-text">
-										<span class="mdi mdi-send-variant-outline mdi-36px"></span>
-										<span>@iemumpss</span>
-									</span>
-								</a>
-							</div>
-							<div class="column is-4">
-								<a href="https://www.linkedin.com/company/iemumpss/" class="has-text-link is-size-4" target="_blank">
-									<span class="icon-text">
-										<span class="mdi mdi-linkedin mdi-36px"></span>
-										<span>@iemumpss</span>
-									</span>
-								</a>
-							</div>
-							<div class="column is-4">
-								<a href="https://iemumpss.vercel.app" class="has-text-info-dark is-size-4" target="_blank">
-									<span class="icon-text">
-										<span class="mdi mdi-web mdi-36px"></span>
-										<span>http://iemumpss.tech</span>
-									</span>
-								</a>
-							</div>
-							<div class="column is-4">
-								<a href="mailto:iem@ump.edu.my" class="has-text-dark is-size-4">
-									<span class="icon-text">
-										<span class="mdi mdi-email mdi-36px"></span>
-										<span>iem@ump.edu.my</span>
-									</span>
-								</a>
-							</div>
-						</div>
+						<SocialLinks />
 					</div>
 				</div>
 			</div>
@@ -444,7 +215,7 @@ const booths = [
 
 <style>
 #home {
-	background-image: url("/img/home.jpg");
+	background-image: url("img/home.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -452,7 +223,7 @@ const booths = [
 }
 
 #about {
-	background-image: url("/img/about.jpg");
+	background-image: url("img/about.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
