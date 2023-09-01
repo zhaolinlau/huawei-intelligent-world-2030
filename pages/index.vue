@@ -216,7 +216,7 @@ const scrollToElement = (id) => {
 
 <style>
 #home {
-	background-image: url("img/home.jpg");
+	background-image: url("/img/home.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -224,7 +224,7 @@ const scrollToElement = (id) => {
 }
 
 #about {
-	background-image: url("img/about.jpg");
+	background-image: url("/img/about.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
