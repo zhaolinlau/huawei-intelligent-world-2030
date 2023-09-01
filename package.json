@@ -6,23 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "css-build": "node-sass --output-style compressed --omit-source-map-url assets/sass/bulma.scss assets/css/bulma.min.css",
-    "css-watch": "pnpm run css-build -- --watch",
-    "start": "pnpm run css-watch"
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^20.5.7",
     "nuxt": "^3.7.0"
   },
   "dependencies": {
     "@mdi/font": "^7.2.96",
-    "@nuxtjs/web-vitals": "^0.2.6",
     "@oruga-ui/oruga-next": "^0.6.0",
     "@oruga-ui/theme-bulma": "^0.2.11",
     "bulma-list": "^1.2.0",
-    "node-sass": "^9.0.0",
+    "sass": "^1.66.1",
     "vue-scrollto": "^2.20.0"
   }
 }

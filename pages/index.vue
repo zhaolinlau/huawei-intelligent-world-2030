@@ -1,7 +1,4 @@
 <script setup>
-import { ref } from 'vue'
-import navbar from '@/components/navbar.vue';
-import ofooter from '@/components/footer.vue'
 import VueScrollTo from 'vue-scrollto';
 
 const isVideoModalActive = ref(false)
@@ -138,7 +135,7 @@ const booths = [
 <template>
 	<div class="hero is-fullheight" id="home">
 		<div class="hero-head overlay-50">
-			<navbar />
+			<AppBar />
 		</div>
 		<div class="hero-body is-justify-content-center has-text-centered overlay-50">
 			<div class="container">
@@ -442,7 +439,7 @@ const booths = [
 		</div>
 	</div>
 
-	<ofooter />
+	<AppFooter />
 </template>
 
 <style>

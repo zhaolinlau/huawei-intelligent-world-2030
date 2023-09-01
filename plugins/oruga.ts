@@ -1,6 +1,6 @@
 import Oruga from "@oruga-ui/oruga-next";
 import { bulmaConfig } from "@oruga-ui/theme-bulma";
-import "@/assets/css/bulma.min.css";
+import "assets/main.scss";
 import "@mdi/font/css/materialdesignicons.min.css";
 import "bulma-list/css/bulma-list.css";
 

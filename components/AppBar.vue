@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import VueScrollTo from 'vue-scrollto';
 
 const showNav = ref(false);

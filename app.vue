@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 useHead({
 	title: 'Huawei Open Day: Intelligent World 2030',
 	meta: [
@@ -18,6 +18,8 @@ useSeoMeta({
 
 <template>
 	<div>
-		<RouterView />
+		<ClientOnly fallback-tag="progress" fallback="Loading...">
+			<NuxtPage />
+		</ClientOnly>
 	</div>
 </template>

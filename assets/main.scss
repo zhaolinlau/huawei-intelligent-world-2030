@@ -1,4 +1,4 @@
-@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "bulma/sass/utilities/_all";
 
 $primary: #dc2626;
 $primary-light: findLightColor($primary);
@@ -57,5 +57,5 @@ $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
 
-@import "../../node_modules/bulma/bulma.sass";
-@import '../../node_modules/@oruga-ui/theme-bulma/src/assets/scss/bulma.scss';
+@import "bulma/bulma";
+@import '@oruga-ui/theme-bulma/dist/scss/bulma';
