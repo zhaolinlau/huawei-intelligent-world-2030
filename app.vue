@@ -18,7 +18,7 @@ useSeoMeta({
 
 <template>
 	<div>
-		<ClientOnly fallback-tag="progress" fallback="Loading...">
+		<ClientOnly fallback-tag="span" fallback="Loading...">
 			<NuxtPage />
 		</ClientOnly>
 	</div>
