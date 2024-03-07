@@ -2,5 +2,5 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ["@nuxt/image"],
-	plugins: ["plugins/oruga.ts"],
+	plugins: ["plugins/oruga.js"],
 });
