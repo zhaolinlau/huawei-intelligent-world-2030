@@ -35,7 +35,7 @@ const scrollToElement = (id) => {
 					<div class="column is-full">
 						<button class="button is-primary is-large is-rounded" @click="isVideoModalActive = true">
 							<span class="icon">
-								<i class="mdi mdi-play"></i>
+								<i class="mdi mdi-play mdi-48px"></i>
 							</span>
 						</button>
 

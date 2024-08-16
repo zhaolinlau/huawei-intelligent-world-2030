@@ -22,7 +22,7 @@ onUnmounted(() => {
 	<button class="button is-primary scrolltotop animate__animated animate__fadeIn" v-if="showButton"
 		@click="scrollToTop">
 		<span class="icon">
-			<i class="mdi mdi-arrow-up"></i>
+			<i class="mdi mdi-arrow-up mdi-24px"></i>
 		</span>
 	</button>
 </template>
