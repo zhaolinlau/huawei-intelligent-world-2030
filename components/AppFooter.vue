@@ -7,9 +7,8 @@
 				<br>
 				Website content licensed under
 				<a class="has-text-primary" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA
-					4.0</a>.
-				<br>
-				Made by <a class="has-text-primary" href="https://zhaolinlau.vercel.app/" target="_blank">Zhaolin Lau</a>.
+					4.0
+				</a>
 			</p>
 		</div>
 	</footer>
