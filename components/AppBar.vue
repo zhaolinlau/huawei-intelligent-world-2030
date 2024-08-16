@@ -62,4 +62,3 @@ const scrollToElement = (id) => {
 		</div>
 	</nav>
 </template>
-

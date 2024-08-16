@@ -2,5 +2,11 @@
 export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ["@nuxt/image"],
-	plugins: ["plugins/oruga.js"],
+	css: [
+		'assets/main.scss',
+		'@mdi/font/css/materialdesignicons.min.css',
+		'bulma-list/css/bulma-list.css',
+		'animate.css/animate.css'
+	],
+	compatibilityDate: "2024-08-16",
 });
