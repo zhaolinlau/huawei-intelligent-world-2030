@@ -10,7 +10,6 @@ const scrollToElement = (id) => {
 </script>
 
 <template>
-	<BackTop />
 	<div class="hero is-fullheight" id="home">
 		<div class="hero-head overlay-50">
 			<AppBar />
@@ -34,21 +33,29 @@ const scrollToElement = (id) => {
 					</div>
 
 					<div class="column is-full">
-						<o-button size="large" variant="primary" @click="isVideoModalActive = true" icon-left="play"
-							rounded></o-button>
-						<o-modal v-model:active="isVideoModalActive" closeIconSize="small">
-							<figure class="image is-16by9">
-								<iframe class="has-ratio"
-									src="https://www.huawei.com/mediafiles/MediaFiles/2/1/2/{2121536E-2920-4260-AAEE-59DD37B7ECEB}intelligent-2030-en-720.mp4"
-									frameborder="0" allowfullscreen></iframe>
-							</figure>
-						</o-modal>
+						<button class="button is-primary is-large is-rounded" @click="isVideoModalActive = true">
+							<span class="icon">
+								<i class="mdi mdi-play"></i>
+							</span>
+						</button>
+
+						<div :class="`modal ${isVideoModalActive ? 'is-active' : ''}`">
+							<div class="modal-background"></div>
+							<div class="modal-content">
+								<figure class="image is-16by9">
+									<iframe class="has-ratio"
+										src="https://www.huawei.com/mediafiles/MediaFiles/2/1/2/{2121536E-2920-4260-AAEE-59DD37B7ECEB}intelligent-2030-en-720.mp4"
+										frameborder="0" allowfullscreen></iframe>
+								</figure>
+							</div>
+							<button class="modal-close is-large" aria-label="close" @click="isVideoModalActive = false"></button>
+						</div>
 					</div>
 
 					<div class="column is-full">
-						<o-button variant="primary" class="has-text-weight-semibold has-text-white" outlined rounded
+						<button class="button is-primary is-outlined is-rounded has-text-weight-semibold has-text-white"
 							@click="scrollToElement('#about', 500)">About The
-							Event</o-button>
+							Event</button>
 					</div>
 				</div>
 				<div>
@@ -210,8 +217,6 @@ const scrollToElement = (id) => {
 			</div>
 		</div>
 	</div>
-
-	<AppFooter />
 </template>
 
 <style>

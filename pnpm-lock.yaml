@@ -14,15 +14,12 @@ importers:
       '@nuxt/image':
         specifier: 1.7.0
         version: 1.7.0(ioredis@5.4.1)(magicast@0.3.4)(rollup@4.20.0)
-      '@oruga-ui/oruga-next':
-        specifier: 0.9.0-pre.1
-        version: 0.9.0-pre.1(vue@3.4.38)
-      '@oruga-ui/theme-bulma':
-        specifier: ^0.3.0
-        version: 0.3.0
       animate.css:
         specifier: ^4.1.1
         version: 4.1.1
+      bulma:
+        specifier: ^1.0.2
+        version: 1.0.2
       bulma-list:
         specifier: ^2.1.0
         version: 2.1.0
@@ -738,14 +735,6 @@ packages:
     peerDependencies:
       vue: ^3.3.4
 
-  '@oruga-ui/oruga-next@0.9.0-pre.1':
-    resolution: {integrity: sha512-M4hVD+YukjIX5UQ9w3qk6i1oZKSCdZoCfOk3lsGia9BB4QtD2wuqxEDA5w3/w5T31hTRvaZaENOyPP8p3V8FjA==}
-    peerDependencies:
-      vue: ^3.0.0
-
-  '@oruga-ui/theme-bulma@0.3.0':
-    resolution: {integrity: sha512-lkTsrdQJ6L5s/SACVtnjo51Tx/jIR+Dz2CgLAbLEooTE0tTiQPiQhkgXqEqLX8a78Kxp7kJa5d7YypGGxiJPjg==}
-
   '@parcel/watcher-android-arm64@2.4.1':
     resolution: {integrity: sha512-LOi/WTbbh3aTn2RYddrO8pnapixAziFl6SMxHM69r3tvdSm94JtCenaKgk1GRg5FJ5wpMCpHeW+7yqPlvZv7kg==}
     engines: {node: '>= 10.0.0'}
@@ -1287,8 +1276,8 @@ packages:
   bulma-list@2.1.0:
     resolution: {integrity: sha512-D0wPdAaG/ae1WPFpQrN5oIWxF/KDzLwHsAvoxUqs/NNqSK/auADS6AW1fVWBjLg5ZT3c8BCeao4RG3hCPl3GxA==}
 
-  bulma@0.9.4:
-    resolution: {integrity: sha512-86FlT5+1GrsgKbPLRRY7cGDg8fsJiP/jzTqXXVqiUZZ2aZT8uemEOHlU1CDU+TxklPEZ11HZNNWclRBBecP4CQ==}
+  bulma@1.0.2:
+    resolution: {integrity: sha512-D7GnDuF6seb6HkcnRMM9E739QpEY9chDzzeFrHMyEns/EXyDJuQ0XA0KxbBl/B2NTsKSoDomW61jFGFaAxhK5A==}
 
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
@@ -4107,14 +4096,6 @@ snapshots:
       - vti
       - vue-tsc
 
-  '@oruga-ui/oruga-next@0.9.0-pre.1(vue@3.4.38)':
-    dependencies:
-      vue: 3.4.38
-
-  '@oruga-ui/theme-bulma@0.3.0':
-    dependencies:
-      bulma: 0.9.4
-
   '@parcel/watcher-android-arm64@2.4.1':
     optional: true
 
@@ -4683,7 +4664,7 @@ snapshots:
 
   bulma-list@2.1.0: {}
 
-  bulma@0.9.4: {}
+  bulma@1.0.2: {}
 
   bundle-name@4.1.0:
     dependencies:

@@ -44,7 +44,9 @@ const socials = [
 		<div class="column is-4" v-for="social in socials">
 			<a :href="social.href" :class="`is-size-4 has-text-${social.color}`" target="_blank">
 				<span class="icon-text">
-					<o-icon :icon="social.icon" size="medium"></o-icon>
+					<span class="icon">
+						<i :class="`mdi mdi-${social.icon}`"></i>
+					</span>
 					<span>{{ social.id }}</span>
 				</span>
 			</a>
